@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const iniciarAudio = () => {
       audio.currentTime = 18; // Comenzar desde el segundo 14
-      audio.volume = 0.5;
+      audio.volume = 0.3;
       audio.play().catch(err => {
         console.warn("Autoplay bloqueado:", err);
       });
