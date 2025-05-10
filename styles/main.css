@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom right, #ffe4e1, #fff0f5);
+    color: #444;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  header {
+    padding: 2em 1em;
+    background-color: #ffc0cb88;
+    z-index: 1;
+    position: relative;
+  }
+  
+  header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    color: #e91e63;
+    animation: fadeInDown 2s ease-in-out;
+  }
+  
+  /* Fondo de flores */
+  .flower-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .flower {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    animation: fadeIn 3s ease forwards;
+    opacity: 0.8;
+  }
+  
+  .section {
+    padding: 2em 1em;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .photo-center img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .message-final {
+    opacity: 0;
+    font-size: 1.7em;
+    color: #d81b60;
+    font-family: 'Pacifico', cursive;
+    margin-top: 2em;
+    animation: fadeInUp 2s ease forwards;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+  }
+  
+  .full-screen-photo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+  
+  /* Animaciones */
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
