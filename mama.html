@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Día Mamá</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom right, #ffe4e1, #fff0f5);
+      color: #444;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 2em 1em;
+      background-color: #ffc0cb66;
+    }
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2em;
+      color: #e91e63;
+      animation: fadeInDown 2s ease-in-out;
+    }
+    .section {
+      padding: 2em 1em;
+    }
+    .photos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+    }
+    .photos img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      animation: fadeIn 1s ease forwards;
+    }
+    .flowers {
+      margin: 2em 0;
+      position: relative;
+      height: 200px;
+    }
+    .flower {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      animation: bloom 3s ease forwards;
+    }
+    .message-final {
+      opacity: 0;
+      font-size: 1.5em;
+      color: #d81b60;
+      font-family: 'Pacifico', cursive;
+      margin-top: 2em;
+      animation: fadeInUp 2s ease forwards;
+      animation-delay: 3s;
+      animation-fill-mode: forwards;
+    }
+    .music-player {
+      margin: 2em auto;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes bloom {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Feliz día, mamá. Te amo</h1>
+  </header>
+
+  <section class="section photos">
+    <!-- Sustituye las URLs por tus fotos reales -->
+    <img src="https://via.placeholder.com/100" alt="Foto 1">
+    <img src="https://via.placeholder.com/100" alt="Foto 2">
+    <img src="https://via.placeholder.com/100" alt="Foto 3">
+    <img src="https://via.placeholder.com/100" alt="Foto 4">
+  </section>
+
+  <section class="section flowers">
+    <img class="flower" src="https://www.transparenttextures.com/patterns/floral.png" style="top: 0; left: 30%;">
+    <img class="flower" src="https://www.transparenttextures.com/patterns/floral.png" style="top: 50px; left: 50%;">
+    <img class="flower" src="https://www.transparenttextures.com/patterns/floral.png" style="top: 100px; left: 70%;">
+  </section>
+
+  <div class="message-final">
+    Gracias por todo, mamá. Eres mi todo. 💖
+  </div>
+
+  <section class="section music-player">
+    <audio controls>
+      <!-- Reemplaza con tu canción preferida -->
+      <source src="tu-musica.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+  </section>
+
+  <script>
+    // Detectar dispositivo
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+      document.body.style.fontSize = '16px';
+    } else {
+      document.body.style.fontSize = '20px';
+    }
+  </script>
+</body>
+</html>
